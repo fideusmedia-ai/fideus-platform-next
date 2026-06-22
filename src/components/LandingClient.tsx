@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Nav from "@/components/sections/Nav";
 import Hero from "@/components/sections/Hero";
+import ParaQuienEs from "@/components/sections/ParaQuienEs";
 import Cases from "@/components/sections/Cases";
 import Portafolio from "@/components/sections/Portafolio";
 import Framework from "@/components/sections/Framework";
@@ -19,6 +20,7 @@ export default function LandingClient() {
     <div className="min-h-screen bg-white text-ink-600 selection:bg-primary/10 font-sans antialiased">
       <Nav onLeadClick={openLeadForm} />
       <Hero onLeadClick={openLeadForm} />
+      <ParaQuienEs />
       <Cases onLeadClick={openLeadForm} />
       <Portafolio onLeadClick={openLeadForm} />
       <Framework onLeadClick={openLeadForm} />
