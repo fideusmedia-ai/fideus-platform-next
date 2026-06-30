@@ -58,7 +58,7 @@ export default function Image() {
               lineHeight: 1.18,
             }}
           >
-            Tu negocio no necesita más marketing. Necesita estructura.
+            Tal vez tu negocio no necesita más publicidad. Necesita estructura.
           </div>
         </div>
 

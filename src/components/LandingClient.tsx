@@ -4,7 +4,6 @@ import { useState } from "react";
 import Nav from "@/components/sections/Nav";
 import Hero from "@/components/sections/Hero";
 import ParaQuienEs from "@/components/sections/ParaQuienEs";
-import Cases from "@/components/sections/Cases";
 import Portafolio from "@/components/sections/Portafolio";
 import Framework from "@/components/sections/Framework";
 import FAQ from "@/components/sections/FAQ";
@@ -21,7 +20,7 @@ export default function LandingClient() {
       <Nav onLeadClick={openLeadForm} />
       <Hero onLeadClick={openLeadForm} />
       <ParaQuienEs />
-      <Cases onLeadClick={openLeadForm} />
+      {/* <Cases onLeadClick={openLeadForm} /> — oculta temporalmente, ver fideus-platform-next/src/components/sections/Cases.tsx */}
       <Portafolio onLeadClick={openLeadForm} />
       <Framework onLeadClick={openLeadForm} />
       <FAQ />

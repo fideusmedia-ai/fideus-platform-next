@@ -8,11 +8,11 @@ interface Props {
 }
 
 const BLOBS = [
-  { type: "flow-streak", start: "#6B1158", mid: "#C9207A", end: "#E03870", dur: "22s", delay: "0s",   top: "-25%" },
-  { type: "flow-wave",   start: "#C9207A", mid: "#DC4E94", end: "#F5D6F0", dur: "26s", delay: "-5s",  top: "-10%" },
-  { type: "flow-streak", start: "#43093A", mid: "#6B1158", end: "#A84591", dur: "20s", delay: "-10s", top: "-15%" },
-  { type: "flow-wave",   start: "#E03870", mid: "#C9207A", end: "#F7B0D4", dur: "30s", delay: "-2s",  top: "10%" },
-  { type: "flow-streak", start: "#F5D6F0", mid: "#A84591", end: "#6B1158", dur: "24s", delay: "-8s",  top: "5%" },
+  { type: "flow-streak", start: "#6B1158", mid: "#C9207A", end: "#E03870", dur: "11s", delay: "0s",   top: "-25%" },
+  { type: "flow-wave",   start: "#C9207A", mid: "#E03870", end: "#FF5FB0", dur: "13s", delay: "-5s",  top: "-10%" },
+  { type: "flow-streak", start: "#43093A", mid: "#6B1158", end: "#A84591", dur: "10s", delay: "-7s",  top: "-15%" },
+  { type: "flow-wave",   start: "#E03870", mid: "#C9207A", end: "#FF5FB0", dur: "14s", delay: "-2s",  top: "10%" },
+  { type: "flow-streak", start: "#A84591", mid: "#6B1158", end: "#C9207A", dur: "12s", delay: "-9s",  top: "5%" },
 ];
 
 export default function Hero({ onLeadClick }: Props) {
@@ -46,8 +46,8 @@ export default function Hero({ onLeadClick }: Props) {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-ink-800 tracking-tighter leading-[0.95] max-w-2xl">
-            <span className="animate-leak" style={{ ["--leak-duration" as string]: "20s", ["--leak-delay" as string]: "1s" } as React.CSSProperties}>Tu negocio no necesita más</span>{" "}
-            <span className="font-serif italic font-medium text-ink-400">marketing</span>
+            <span className="animate-leak" style={{ ["--leak-duration" as string]: "20s", ["--leak-delay" as string]: "1s" } as React.CSSProperties}>Tal vez tu negocio no necesita más</span>{" "}
+            <span className="font-serif italic font-medium text-ink-400">publicidad</span>
             <span className="text-ink-800">.</span><br />
             <span className="animate-leak" style={{ ["--leak-duration" as string]: "22s", ["--leak-delay" as string]: "0s" } as React.CSSProperties}>Necesita</span>{" "}
             <span className="font-serif italic font-medium text-brand-gradient">estructura</span>

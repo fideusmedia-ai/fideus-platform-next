@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FideusMedia — Consultoría estratégica integral",
-    description: "Tu negocio no necesita más marketing. Necesita estructura.",
+    description: "Tal vez tu negocio no necesita más publicidad. Necesita estructura.",
   },
   robots: { index: true, follow: true },
 };
