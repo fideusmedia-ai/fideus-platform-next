@@ -17,10 +17,10 @@ interface AreaCard {
 const AREAS: AreaCard[] = [
   { area: "MARCA",       titulo: "Marca & Posicionamiento",  accent: "primary",   icon: <Fingerprint size={20} />, pregunta: "¿El mercado entiende quiénes son y por qué elegirlos?", servicios: ["Identidad de marca", "Refresh de identidad", "Manual de marca"] },
   { area: "MARKETING",   titulo: "Marketing & Captación",    accent: "secondary", icon: <Activity size={20} />,    pregunta: "¿Llegan suficientes prospectos calificados?",            servicios: ["Web institucional", "GBP + SEO local", "Gestión digital + Ads", "Producción visual mensual", "Podcast / Influencers"] },
-  { area: "VENTAS",      titulo: "Ventas & Conversión",      accent: "primary",   icon: <TrendingUp size={20} />,  pregunta: "¿Convierten lo que llega en clientes?",                 servicios: ["CRM básico", "Web e-commerce", "Modelo de precios y rentabilidad"] },
-  { area: "RETENCION",   titulo: "Retención & Experiencia",  accent: "secondary", icon: <RefreshCw size={20} />,   pregunta: "¿Los clientes vuelven y recomiendan?",                  servicios: ["Mystery shopper", "Programa de fidelización", "Capacitación equipo"] },
+  { area: "VENTAS",      titulo: "Ventas & Conversión",      accent: "primary",   icon: <TrendingUp size={20} />,  pregunta: "¿Convierten lo que llega en clientes?",                 servicios: ["CRM", "Web e-commerce", "Estrategia de precios"] },
+  { area: "RETENCIÓN",   titulo: "Retención & Experiencia", accent: "secondary", icon: <RefreshCw size={20} />,   pregunta: "¿Los clientes vuelven y recomiendan?",                  servicios: ["Mystery shopper", "Programa de fidelización", "Capacitación equipo"] },
   { area: "OPERACIONES", titulo: "Operaciones & Tecnología", accent: "primary",   icon: <Cpu size={20} />,         pregunta: "¿La operación interna escala?",                          servicios: ["Sistema POS", "Sistema ERP", "Dashboard BI", "Automatizaciones"] },
-  { area: "FINANZAS",    titulo: "Finanzas & Salud",         accent: "secondary", icon: <BarChart3 size={20} />,   pregunta: "¿El negocio es financieramente sano?",                  servicios: ["Diagnóstico financiero", "Setup contable", "Modelo de precios"] },
+  { area: "FINANZAS",    titulo: "Finanzas & Salud",         accent: "secondary", icon: <BarChart3 size={20} />,   pregunta: "¿El negocio es financieramente sano?",                  servicios: ["Diagnóstico financiero", "Setup contable", "Modelo de precios y rentabilidad"] },
 ];
 
 interface Props {
@@ -43,7 +43,7 @@ export default function Portafolio({ onLeadClick }: Props) {
             21 servicios. Una sola <span className="font-serif italic font-medium text-brand-gradient">disciplina</span>.
           </h2>
           <p className="text-lg text-ink-500 font-medium leading-relaxed">
-            Lo que sale del diagnóstico se traduce en intervenciones concretas — distribuidas por las áreas que tu negocio necesita estructurar. No es un menú de servicios sueltos; es un sistema.
+            Los resultados del diagnóstico se traducen en intervenciones concretas — distribuidas por las áreas que tu negocio necesita estructurar. No es un menú de servicios sueltos; es un sistema.
           </p>
         </div>
 

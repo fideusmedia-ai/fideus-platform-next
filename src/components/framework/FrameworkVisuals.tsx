@@ -67,7 +67,7 @@ export function FrameworkVisual1({ active, mobile = false }: VisualProps) {
             <span className="text-[10px] font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded">3 críticas</span>
           </div>
           <div className="flex flex-wrap gap-1.5">
-            {["Sin CRM", "Conversión <5%", "Marketing 0% rev"].map((t) => (
+            {["Sin CRM", "Conversión <5%", "Marketing 0% del rev"].map((t) => (
               <span key={t} className="text-[10px] font-semibold text-red-700 bg-red-50/80 border border-red-100 px-2 py-0.5 rounded">🚩 {t}</span>
             ))}
           </div>

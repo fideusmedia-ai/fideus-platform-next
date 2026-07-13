@@ -32,7 +32,7 @@ export default function Cases({ onLeadClick }: Props) {
             <div className="w-14 h-14 rounded-2xl bg-ink-50 group-hover:bg-brand-gradient flex items-center justify-center mb-5 transition-all duration-500 shadow-sm group-hover:shadow-md group-hover:shadow-primary/20">
               <Plus size={22} className="text-ink-400 group-hover:text-white transition-colors duration-500" />
             </div>
-            <p className="text-base font-bold text-ink-700 group-hover:text-primary-700 transition-colors mb-1">Tu negocio aquí.</p>
+            <p className="text-base font-bold text-ink-700 group-hover:text-primary-700 transition-colors mb-1">Tu diagnóstico, aquí.</p>
             <p className="text-xs text-ink-400 max-w-[200px] mb-6">Cupos limitados — abrimos pocos diagnósticos al mes para garantizar profundidad.</p>
             <span className="text-[11px] font-black text-primary-600 uppercase tracking-widest inline-flex items-center gap-1.5">
               Empezar diagnóstico

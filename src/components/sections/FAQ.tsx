@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 
 const FAQS = [
   {
-    q: "¿Por qué es gratis el diagnóstico?",
+    q: "¿Por qué requieren un diagnóstico al inicio?",
     a: "Porque no podemos prescribir sin diagnosticar primero. El reporte es nuestra carta de presentación: te dice exactamente dónde están las brechas en marca, marketing, ventas, retención, operaciones y finanzas. Si después decides trabajar con nosotros, ya partimos de una base común. Si decides no contratar, te quedas con un mapa accionable.",
   },
   {
@@ -22,7 +22,7 @@ const FAQS = [
   },
   {
     q: "¿Tienen contrato mínimo?",
-    a: "Para proyectos únicos (identidad, web, sistema POS), no — pagas el proyecto y queda tuyo. Para servicios continuos (marketing mensual, gestión de redes, sistemas en operación) trabajamos en ciclos de 3 ó 6 meses, porque medir resultados reales requiere ese horizonte. Sin permanencias engañosas.",
+    a: "Para proyectos únicos (identidad, web, sistema POS), no — pagas el proyecto y queda tuyo. Para servicios continuos (marketing mensual, gestión de redes, sistemas en operación) trabajamos en ciclos de 3 o 6 meses, porque medir resultados reales requiere ese horizonte. Sin permanencias engañosas.",
   },
   {
     q: "¿Qué pasa si después del diagnóstico decido no contratar?",

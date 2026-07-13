@@ -7,12 +7,29 @@ interface Props {
   onLeadClick: () => void;
 }
 
+// Versiones guardadas para referencia futura (no activas):
+// VARIANT A — "Ember": rojo-naranja -> fucsia -> morado
+//   { start: "#FF5A36", mid: "#E03870", end: "#842974" }, { start: "#FF8A3D", mid: "#C9207A", end: "#6B1158" },
+//   { start: "#E03870", mid: "#A84591", end: "#3B0764" }, { start: "#FF5A36", mid: "#842974", end: "#4C1D95" },
+//   { start: "#C9207A", mid: "#6B1158", end: "#FF8A3D" }
+// VARIANT B — "Aurora": morado -> fucsia -> azul
+//   { start: "#6B1158", mid: "#C9207A", end: "#4F46E5" }, { start: "#842974", mid: "#A84591", end: "#6366F1" },
+//   { start: "#3B0764", mid: "#6B1158", end: "#3B82F6" }, { start: "#C9207A", mid: "#8B5CF6", end: "#4F46E5" },
+//   { start: "#A84591", mid: "#6B1158", end: "#312E81" }
+// VARIANT C — "Spectrum": rojo-naranja -> fucsia/morado -> azul (cada blob cruza TODO el rango,
+//   por eso el color medio -fucsia/morado- domina ~80% del tiempo de animación)
+//   { start: "#FF5A36", mid: "#E03870", end: "#4F46E5" }, { start: "#FF8A3D", mid: "#C9207A", end: "#6366F1" },
+//   { start: "#E03870", mid: "#842974", end: "#3B82F6" }, { start: "#FF5A36", mid: "#A84591", end: "#4C1D95" },
+//   { start: "#C9207A", mid: "#6B1158", end: "#312E81" }
+
+// VARIANT D — "Balanced": cada blob vive en su propia franja (naranja / fucsia / morado / azul)
+// en vez de converger todos al fucsia-morado, para que los 4 tonos se vean simultáneamente.
 const BLOBS = [
-  { type: "flow-streak", start: "#6B1158", mid: "#C9207A", end: "#E03870", dur: "11s", delay: "0s",   top: "-25%" },
-  { type: "flow-wave",   start: "#C9207A", mid: "#E03870", end: "#FF5FB0", dur: "13s", delay: "-5s",  top: "-10%" },
-  { type: "flow-streak", start: "#43093A", mid: "#6B1158", end: "#A84591", dur: "10s", delay: "-7s",  top: "-15%" },
-  { type: "flow-wave",   start: "#E03870", mid: "#C9207A", end: "#FF5FB0", dur: "14s", delay: "-2s",  top: "10%" },
-  { type: "flow-streak", start: "#A84591", mid: "#6B1158", end: "#C9207A", dur: "12s", delay: "-9s",  top: "5%" },
+  { type: "flow-streak", start: "#FF3B30", mid: "#FF8A3D", end: "#FFB347", dur: "11s", delay: "0s",   top: "-25%" },
+  { type: "flow-wave",   start: "#FF8A3D", mid: "#E03870", end: "#C9207A", dur: "13s", delay: "-5s",  top: "-10%" },
+  { type: "flow-streak", start: "#C9207A", mid: "#842974", end: "#6B1158", dur: "10s", delay: "-7s",  top: "-15%" },
+  { type: "flow-wave",   start: "#6B1158", mid: "#6366F1", end: "#4F46E5", dur: "14s", delay: "-2s",  top: "10%" },
+  { type: "flow-streak", start: "#4F46E5", mid: "#3B82F6", end: "#6366F1", dur: "12s", delay: "-9s",  top: "5%" },
 ];
 
 export default function Hero({ onLeadClick }: Props) {
@@ -45,17 +62,17 @@ export default function Hero({ onLeadClick }: Props) {
             Consultoría Estratégica
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-ink-800 tracking-tighter leading-[0.95] max-w-2xl">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-[0.95] max-w-2xl">
             <span className="animate-leak" style={{ ["--leak-duration" as string]: "20s", ["--leak-delay" as string]: "1s" } as React.CSSProperties}>Tal vez tu negocio no necesita más</span>{" "}
-            <span className="font-serif italic font-medium text-ink-400">publicidad</span>
-            <span className="text-ink-800">.</span><br />
+            <span className="font-serif italic font-medium text-white/50">publicidad</span>
+            <span className="text-white">.</span><br />
             <span className="animate-leak" style={{ ["--leak-duration" as string]: "22s", ["--leak-delay" as string]: "0s" } as React.CSSProperties}>Necesita</span>{" "}
-            <span className="font-serif italic font-medium text-brand-gradient">estructura</span>
-            <span className="text-ink-800">.</span>
+            <span className="font-serif italic font-medium text-hero-accent-gradient">estructura</span>
+            <span className="text-white">.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-ink-500 max-w-xl leading-relaxed font-medium">
-            Diagnosticamos <strong className="text-ink-700">marca, marketing, ventas, retención, operaciones y finanzas</strong> — y construimos los sistemas que cierran las brechas.
+          <p className="text-lg md:text-xl text-white/75 max-w-xl leading-relaxed font-medium">
+            Diagnosticamos <strong className="text-white">marca, marketing, ventas, retención, operaciones y finanzas</strong> — y construimos los sistemas que cierran las brechas.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 pt-4">
@@ -68,7 +85,7 @@ export default function Hero({ onLeadClick }: Props) {
               Cómo funciona <ChevronRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
             </a>
           </div>
-          <p className="text-[11px] font-bold text-ink-400 uppercase tracking-widest pt-2">≈10 minutos · reporte ejecutivo</p>
+          <p className="text-[11px] font-bold text-white/60 uppercase tracking-widest pt-2">≈10 minutos · reporte ejecutivo</p>
         </div>
 
         <HeroDiagnosticPreview />

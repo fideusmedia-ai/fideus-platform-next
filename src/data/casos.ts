@@ -35,7 +35,7 @@ export const CASOS: Record<string, Caso> = {
     desafio: [
       "Cocina excelente, mesa llena los fines de semana — pero la marca no contaba esa historia.",
       "La identidad visual era inconsistente entre el local, las redes y la web. Cada touchpoint se sentía como un negocio distinto, y nada conectaba con la tradición mexicana que se servía en el plato.",
-      "Las redes sociales eran un álbum de fotos al teléfono. La página web parecía hecha años atrás por algún sobrino. Cero coherencia, cero narrativa.",
+      "Las redes sociales eran un álbum de fotos al teléfono. La página web parecía hecha años atrás, sin dirección de marca. Cero coherencia, cero narrativa.",
     ],
     solucion: [
       "Producción de contenido de alta calidad cada mes — foto, video corto, reels. Cada pieza refuerza el concepto.",

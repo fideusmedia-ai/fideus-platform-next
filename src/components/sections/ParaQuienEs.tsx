@@ -32,7 +32,7 @@ export default function ParaQuienEs() {
             <span className="font-serif italic font-medium text-brand-gradient">negocio</span>?
           </h2>
           <p className="text-base md:text-lg text-ink-500 font-medium leading-relaxed mt-4">
-            Mejor decirlo arriba: no somos para todos. Y eso es a propósito — así garantizamos profundidad en cada caso que tomamos.
+            No somos para todos. Y eso es a propósito — así garantizamos profundidad en cada caso que tomamos.
           </p>
         </div>
 

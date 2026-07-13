@@ -86,6 +86,13 @@ body {
     color: transparent;
   }
 
+  .text-hero-accent-gradient {
+    background: linear-gradient(135deg, #FFD9C4 0%, #FFB3D9 50%, #FF8A3D 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
   .grid-lock-container {
     max-width: 80rem;
     margin-left: auto;
@@ -108,7 +115,7 @@ body {
   inset: 0;
   overflow: hidden;
   z-index: 0;
-  background: linear-gradient(135deg, #fdfdfd 0%, #f1f5f9 100%);
+  background: linear-gradient(135deg, #3d1a0a 0%, #2a0e2f 45%, #1a1a3d 100%);
   pointer-events: none;
 }
 
@@ -216,8 +223,8 @@ body {
 
 /* Text leak effect (hero) */
 @keyframes color-leak {
-  0%, 100% { color: #15101F; }
-  50%      { color: rgba(21, 16, 31, 0.45); }
+  0%, 100% { color: #FFFFFF; }
+  50%      { color: rgba(255, 255, 255, 0.55); }
 }
 
 .animate-leak {

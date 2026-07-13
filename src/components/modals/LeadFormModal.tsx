@@ -147,7 +147,7 @@ export default function LeadFormModal({ isOpen, onClose }: Props) {
             <header className="px-6 py-5 border-b border-ink-100 flex items-start justify-between">
               <div>
                 <h2 className="text-xl font-black text-ink-800">Diagnóstico de Marca</h2>
-                <p className="text-xs text-ink-500 mt-1">Cuéntanos sobre tu negocio. Te contactaremos en 24-48 hrs.</p>
+                <p className="text-xs text-ink-500 mt-1">Cuéntanos sobre tu negocio. Te contactaremos en 24-48 horas.</p>
               </div>
               <button onClick={onClose} disabled={submitting} className="text-ink-400 hover:text-ink-700 disabled:opacity-50" aria-label="Cerrar">
                 <X size={20} />

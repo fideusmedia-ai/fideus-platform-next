@@ -20,7 +20,7 @@ const FASES: Fase[] = [
   {
     num: "01", label: "Fase 1", titulo: "Diagnóstico.", free: true,
     intro: "Wizard de 83 preguntas que diagnostica las 6 áreas críticas. Scoring automatizado, banderas críticas detectadas, servicios prescritos según tu caso.",
-    chips: [{ label: "Tu parte", value: "≈10 min" }, { label: "Tu sesión", value: "24-48h" }],
+    chips: [{ label: "Tu parte", value: "≈10 min" }, { label: "Tu reporte", value: "24-48h" }],
     recibes: [
       "Reporte ejecutivo con scores por área (0-100)",
       "Banderas rojas detectadas (urgentes y altas)",
