@@ -11,8 +11,8 @@ const PRESUPUESTOS = [
   "Menos de $10K",
   "$10K - $30K",
   "$30K - $80K",
-  "$80K - $200K",
-  "Más de $200K",
+  "$80K - $150K",
+  "Más de $150K",
   "No estoy seguro",
 ];
 

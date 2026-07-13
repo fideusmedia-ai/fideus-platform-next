@@ -37,14 +37,14 @@ export default function HeroDiagnosticPreview() {
 
   return (
     <div className="relative group w-full lg:w-[50%] lg:ml-auto transform -translate-y-4">
-      <div className="absolute inset-0 bg-gradient-to-tr from-primary-100 to-secondary-100 rounded-[1.5rem] rotate-3 transform origin-bottom-right transition-transform group-hover:rotate-6"></div>
-      <div className="relative w-full rounded-2xl border border-white/60 shadow-[0_40px_80px_-15px_rgba(107,17,88,0.10)] overflow-hidden">
-        {/* Franja superior con velo blanco (se ve el fondo del hero, atenuado) que se funde a blanco sólido */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-primary-100 to-secondary-100 rounded-xl rotate-3 transform origin-bottom-right transition-transform group-hover:rotate-6"></div>
+      <div className="relative w-full rounded-lg border border-white/60 shadow-[0_40px_80px_-15px_rgba(107,17,88,0.10)] overflow-hidden">
+        {/* Franja superior con velo blanco (se ve el fondo del hero, atenuado) que se funde a blanco sólido antes de llegar a 1/3 de la tarjeta */}
         <div
           className="absolute inset-0 backdrop-blur-md z-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.6) 12%, rgba(255,255,255,0.88) 22%, rgba(255,255,255,0.98) 32%, #ffffff 42%, #ffffff 100%)",
+              "linear-gradient(to bottom, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.62) 8%, rgba(255,255,255,0.88) 14%, rgba(255,255,255,0.97) 20%, #ffffff 26%, #ffffff 100%)",
           }}
         ></div>
 
